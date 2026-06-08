@@ -1,0 +1,171 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    overflow-y:scroll;
+    text-align: center;
+}
+
+#selected-products-container, #product-loader, #toolbar{
+    text-align: center;
+    border: 2px solid black;
+    position:relative;
+}
+#toolbar{
+    border-bottom: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+    background-color: white;
+    padding: 5px;
+}
+#selected-products-container{
+    border-radius: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.hide{
+    display: none;
+}
+.container150{
+    height: 40px;
+}
+#product-loader{
+    padding-top: 5px;
+    border-top: 1px solid black;
+    border-radius: 0 0 8px 8px;
+}
+.product-element{
+    display: inline-table;
+    vertical-align: middle;
+    border-radius: 8px;
+    /* margin: -0.1rem; */
+    width: 350px;
+    padding: 5px;
+    margin: 2px;
+    min-height: 450px;
+    border: 1px solid black;
+}
+button{
+    cursor: pointer;
+    color: black;
+}
+#page-title{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#page-title img{
+    margin-bottom: -10px;
+}
+.selection{
+    display: inline-table;
+    border: 1px solid black;
+    vertical-align: middle;
+    border-radius: 8px;
+    width: 350px;
+    padding: 5px;
+    margin: 2px;
+    background-color: lightgray;
+    height: 170px;
+    position:relative;
+}
+
+.selection-image{
+    width: 100px;
+    height: 100px;
+    margin-bottom: -20px;
+}
+
+input, button{ 
+    width: 160px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0;
+}
+input{
+    text-align: center;
+    width: 250px;
+}
+#result-url, #local-url{
+    width: 70%;
+    cursor: text;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: left;
+    padding-left: 2px;
+}
+#search{
+    width: 360px;
+}
+#direct-checkout{
+    text-decoration: none;
+    color: black;
+}
+.line-breaker{
+    border-bottom: 1px solid black;
+}
+.delete-button, .selected-minus-button, .selected-plus-button{
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    background-color: #FFCCCB;
+    border: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0 8px 0 0;
+    box-sizing: content-box;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.selected-minus-button{
+    background-color: lightgray;
+    border-radius: 0 8px 0 8px;
+    right: 60px;
+}
+.selected-plus-button{
+    background-color: lightgray;
+    border-radius: 0;
+    right: 30px;
+}
+.amount-change-button{
+    width: 40px;
+    padding: none;
+}
+.minus-button{
+    border-radius: 8px 0 0 8px;
+}
+.plus-button{
+    border-radius: 0 8px 8px 0;
+}
+.counter{
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 1px;
+    outline: none;
+}
+.counter::-webkit-outer-spin-button,
+.counter::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.selected-price{
+    line-height: 1px;
+}
+.selected-title{
+    margin-bottom: -20px;
+}
+#show-more-less{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width: 30px;
+}

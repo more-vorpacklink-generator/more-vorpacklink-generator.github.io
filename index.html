@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Vorpacklink Generator</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/713cadab38.js" crossorigin="anonymous"></script>
+    <script src="/mark.min.js"></script>
+    <script src="/script.js"></script>
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
+<body>
+    <div id="page-title">
+        <img src="https://morenutrition.de/cdn/shop/files/226x112_More_Logo.png?v=1756107233&width=200" alt="" width="90"> 
+         Vorpacklink Generator
+    </div>
+    <div id="toolbar">
+        <input type="text" name="search" id="search" placeholder="Suche">
+    </div>
+    <div id="selected-products-container">
+        <button id="show-more-less"><i class="fa-solid fa-arrow-up"></i></button>
+        <div id="selected-products">
+            Rabattcode eingeben: <input type="text" name="discount" id="discount" placeholder="Rabattcode eingeben" value="">
+            <p></p>
+            <label for="result-url">Dein individueller More Vorpacklink. Nutze diesen, um deine ausgewählten Produkte in den More Warenkorb zu legen:</label>
+            <br>
+            <input type="text" name="result-url" id="result-url" readonly value="https://morenutrition.de">
+            <button id="copy-link"><i class="fa-solid fa-copy"></i> Kopieren</button>
+            <button><a href="https://morenutrition.de" target="_blank" id="direct-checkout"><i class="fa-solid fa-up-right-from-square"></i> Vorpacken</a></button>
+            <p class="line-breaker"></p>
+            <h2 id="selection-info">Deine Auswahl: 0.00 €</h2>
+            <div id="selected-products-element"></div>
+        </div>
+        
+    </div>
+    <div id="product-loader">
+        Lade More Produkte
+        <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+    </div>
+</body>
+</html>
